@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="REST API tests" verbose="1">
+    <parameter name="domainName" value="https://reqres.in/"/>
+    <listeners>
+        <listener class-name="generic.TestReporter"/>
+    </listeners>
+    <test name="Test(s)">
+        <classes>
+            <class name="LoginTest"/>
+        </classes>
+    </test>
+</suite>
